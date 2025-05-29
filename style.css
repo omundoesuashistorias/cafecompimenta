@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* cinza claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff69b4; /* rosa */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Colunas responsivas */
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.coluna {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.coluna h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Coluna única */
+.unica {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.unica h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Separador */
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff69b4; /* rosa */
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsivo extra */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+}
